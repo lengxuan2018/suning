@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/*通用样式*/
+* {
+  padding: 0;
+  margin: 0;
+  font: 12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB"; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+a:hover {
+  color: #f60; }
+
+img {
+  border: none;
+  vertical-align: middle; }
+
+i, em {
+  font-style: normal; }
+
+.color-f {
+  color: #f60; }
+
+/*内容样式*/
+.top {
+  background-color: #F5F5F5;
+  height: 35px;
+  border-bottom: 1px solid #EEE;
+  position: relative;
+  z-index: 1; }
+
+.top-content {
+  width: 1190px;
+  margin: 0 auto;
+  *zoom: 1; }
+  .top-content:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+
+.top-left {
+  float: left; }
+
+.top-l {
+  float: left;
+  height: 35px; }
+
+.web-map {
+  position: relative; }
+
+.top-drop {
+  position: relative; }
+
+/*下拉hover*/
+.top-drop:hover .top-drop-bg {
+  background-color: #fff;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #fff;
+  margin-right: -1px;
+  margin-left: -1px; }
+.top-drop:hover .drop-box {
+  display: block; }
+
+.web-map {
+  padding: 0 11px 0 9px;
+  position: relative;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  z-index: 5; }
+
+.iconfont.icon-jiantou_down {
+  font-size: 14px;
+  color: #bbb; }
+
+/*下拉通用样式*/
+/*网站导航下拉*/
+.web-map-drop {
+  position: absolute;
+  display: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  top: 35px;
+  left: -1px;
+  z-index: 4;
+  overflow: hidden;
+  *zoom: 1;
+  width: 988px;
+  height: 240px;
+  padding-top: 20px; }
+  .web-map-drop:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+
+.web-map-drop-close {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 12px; }
+  .web-map-drop-close .icon-close {
+    display: block;
+    font-size: 14px;
+    color: #666; }
+    .web-map-drop-close .icon-close:hover {
+      color: #f60;
+      -webkit-transform: rotateZ(180deg);
+      -moz-transform: rotateZ(180deg);
+      -o-transform: rotateZ(180deg);
+      -ms-transform: rotateZ(180deg);
+      transform: rotateZ(180deg);
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+
+.web-map-drop-box {
+  float: left;
+  width: 176px;
+  padding-left: 20px;
+  border-right: 1px solid #eee; }
+  .web-map-drop-box h3 {
+    height: 25px;
+    font-size: 14px; }
+
+.web-box-item {
+  width: 100%; }
+  .web-box-item a {
+    display: inline-block;
+    width: 50%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #666;
+    position: relative; }
+    .web-box-item a:hover {
+      color: #f60; }
+
+.web-box-item-hot {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 3px;
+  right: 18px;
+  width: 14px;
+  height: 14px;
+  background: url("image/npbg.png") 0 -205px no-repeat; }
+
+.web-map-drop-box-end {
+  border-right: none; }
+
+.seller {
+  padding: 0 7px 0 9px;
+  position: relative;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  z-index: 5; }
+
+/*商家入驻下拉*/
+.seller-drop {
+  position: absolute;
+  display: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  top: 35px;
+  left: -1px;
+  z-index: 4;
+  overflow: hidden;
+  *zoom: 1;
+  width: 162px;
+  height: 117px;
+  padding-top: 5px; }
+  .seller-drop:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+  .seller-drop p {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 28px;
+    overflow: hidden; }
+    .seller-drop p a {
+      display: inline-block;
+      width: 100%;
+      padding-left: 10px;
+      line-height: 28px; }
+
+.service {
+  padding: 0 9px;
+  position: relative;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  z-index: 5; }
+
+/*客户服务下拉*/
+.service-drop {
+  position: absolute;
+  display: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  top: 35px;
+  left: -1px;
+  z-index: 4;
+  overflow: hidden;
+  *zoom: 1;
+  left: -83px;
+  width: 162px;
+  height: 117px;
+  padding-top: 5px; }
+  .service-drop:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+  .service-drop p {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 28px;
+    overflow: hidden; }
+    .service-drop p a {
+      display: inline-block;
+      width: 100%;
+      padding-left: 10px;
+      line-height: 28px; }
+
+.location {
+  position: relative;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  z-index: 5;
+  margin-left: 10px; }
+
+.location-pic {
+  display: inline-block;
+  float: left;
+  margin: 10px 6px 0;
+  width: 12px;
+  height: 15px;
+  background: url("image/index.png") -387px -183px; }
+
+.location-down {
+  display: inline-block;
+  float: right;
+  width: 0;
+  height: 0;
+  margin: 16px 0 0 6px;
+  border-width: 6px 4px;
+  border-color: #bbb transparent transparent;
+  border-style: solid dashed dashed; }
+
+.top-right {
+  float: right; }
+
+.top-r {
+  float: left;
+  position: relative; }
+
+.top-log a {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 10px 0 4px; }
+
+.my-order, .my-yigou, .mobile-sn {
+  padding: 0 9px;
+  position: relative;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  z-index: 5; }
+
+.sn-vip, .yifubao, .company {
+  display: block;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px; }
+
+/*我的订单下拉*/
+.my-order-drop {
+  position: absolute;
+  display: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  top: 35px;
+  left: -1px;
+  z-index: 4;
+  overflow: hidden;
+  *zoom: 1;
+  width: 80px;
+  height: 120px;
+  padding-bottom: 5px; }
+  .my-order-drop:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+  .my-order-drop a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    overflow: hidden; }
+
+/*我的易购下拉*/
+.my-yigou-drop {
+  position: absolute;
+  display: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  top: 35px;
+  left: -1px;
+  z-index: 4;
+  overflow: hidden;
+  *zoom: 1;
+  width: 162px;
+  height: 156px;
+  padding-top: 5px; }
+  .my-yigou-drop:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+
+.yigou-drop-top {
+  *zoom: 1; }
+  .yigou-drop-top:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+  .yigou-drop-top img {
+    float: left;
+    margin-left: 10px;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #F7F7F7; }
+
+.yigou-drop-top-t {
+  display: block;
+  float: left;
+  margin-top: 2px;
+  margin-left: 20px;
+  width: 64px;
+  height: 26px;
+  line-height: 26px; }
+
+.yigou-drop-top-p {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  padding: 0 8px;
+  height: 22px;
+  width: 48px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #FF6600;
+  border-radius: 3px; }
+  .yigou-drop-top-p:hover {
+    color: #fff; }
+
+.yigou-drop-btn {
+  padding: 5px 0; }
+  .yigou-drop-btn p {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    overflow: hidden; }
+    .yigou-drop-btn p a {
+      display: inline-block;
+      width: 100%;
+      padding-left: 10px;
+      line-height: 30px; }
+
+.shopcar {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 3px 0 27px;
+  color: #f60;
+  position: relative; }
+  .shopcar .icon-gouwuche {
+    font-size: 14px;
+    color: #f60;
+    position: absolute;
+    top: 8px;
+    left: 8px; }
+  .shopcar span {
+    margin: 0 3px; }
+
+/*购物车下拉*/
+.shopcar-drop {
+  position: absolute;
+  display: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  top: 35px;
+  left: -1px;
+  z-index: 4;
+  overflow: hidden;
+  *zoom: 1;
+  width: 280px;
+  height: 400px;
+  display: block; }
+  .shopcar-drop:after {
+    display: table;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both; }
+
+.shopcar-drop-box {
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%; }
+
+.shopcar-drop-box-content {
+  display: table-cell;
+  vertical-align: middle; }
+
+.shopcar-drop-pic {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 96px;
+  background: url("image/sidebar.png") 0 -290px no-repeat; }
+
+.shopcar-drop-p1 {
+  display: inline-block;
+  margin: 10px auto 0;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #BBB; }
+
+/*# sourceMappingURL=css.css.map */
