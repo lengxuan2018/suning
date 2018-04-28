@@ -32,6 +32,7 @@ i,em{font-style: normal;}
 .top-content{
   width: 1190px;
   margin: 0 auto;
+  position: relative;
   @include clearfix();
 }
 .top-left{
@@ -56,6 +57,7 @@ i,em{font-style: normal;}
     border-bottom: 1px solid #fff;
     margin-right: -1px;
     margin-left: -1px;
+    z-index: 5;
   }
   .drop-box{
     display: block;
@@ -355,6 +357,7 @@ i,em{font-style: normal;}
   @include color-f();
   position: relative;
 
+
   .icon-gouwuche{
     font-size: 14px;
     @include color-f();
@@ -373,7 +376,6 @@ i,em{font-style: normal;}
   @include dropbox;
   width: 280px;
   height: 400px;
-  display: block;
 }
 .shopcar-drop-box{
   display: table;
@@ -384,6 +386,7 @@ i,em{font-style: normal;}
 .shopcar-drop-box-content{
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 
 }
 .shopcar-drop-pic{
@@ -395,10 +398,87 @@ i,em{font-style: normal;}
 }
 .shopcar-drop-p1{
   display: inline-block;
-  margin: 10px auto 0;
+  margin: 10px auto 18px;
   font-size: 14px;
   height: 24px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: lighter;
   color: #BBB;
+
+}
+.shopcar-drop-p2{
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  color: #BBB;
+  margin: 0 auto;
+}
+.shopcar-drop-log{
+  display: inline-block;
+  padding: 0 20px;
+  height: 26px;
+  line-height: 26px;
+  background: #FF6600;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+
+  &:hover{
+    color: #fff;
+  }
+}
+
+/*手机苏宁下拉*/
+.mobile-drop{
+  @include dropbox();
+  width: 540px;
+  height: 210px;
+  left: -461px;
+  padding-top: 10px;
+  @include clearfix();
+}
+.mobile-drop-box{
+  width: 180px;
+  float: left;
+  position: relative;
+  text-align: center;
+  color: #666;
+
+  p{
+    height: 14px;
+    line-height: 14px;
+  }
+  &:after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: 97px;
+    background-color: #DEDEDE;
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+}
+.mobile-drop-box-btn{
+  margin: 5px 0;
+}
+.mobile-drop-box-code{
+  width: 147px;
+  height: 147px;
+  margin: 10px 0;
+}
+
+/*右上角+*/
+.top-ad-btn{
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: -23px;
+  background: url("image/index.png") -241px -160px;
+  width: 15px;
+  height: 15px;
+
+  &:hover{
+    background-position: -256px -160px;
+  }
 }
