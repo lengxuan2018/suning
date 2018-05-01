@@ -1,556 +1,265 @@
 @charset "UTF-8";
 /*通用样式*/
-* {
-  padding: 0;
-  margin: 0;
-  font: 12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB"; }
+* { padding: 0; margin: 0; font: 12px/1.5 "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB"; }
 
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
-a {
-  text-decoration: none;
-  color: #333; }
+a { text-decoration: none; color: #333; }
 
-a:hover {
-  color: #f60; }
+a:hover { color: #f60; }
 
-img {
-  border: none;
-  vertical-align: middle; }
+img { border: none; vertical-align: middle; }
 
-i, em {
-  font-style: normal; }
+i, em { font-style: normal; }
 
-.color-f {
-  color: #f60; }
+.color-f { color: #f60; }
 
 /*内容样式*/
-.top {
-  background-color: #F5F5F5;
-  height: 35px;
-  border-bottom: 1px solid #EEE;
-  position: relative;
-  z-index: 1; }
+.top { background-color: #F5F5F5; height: 35px; border-bottom: 1px solid #EEE; position: relative; z-index: 1; }
 
-.top-content {
-  width: 1190px;
-  margin: 0 auto;
-  position: relative;
-  *zoom: 1; }
-  .top-content:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
+.top-content { width: 1190px; margin: 0 auto; position: relative; *zoom: 1; }
+.top-content:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
 
-.top-left {
-  float: left; }
+.top-left { float: left; }
 
-.top-l {
-  float: left;
-  height: 35px; }
+.top-l { float: left; height: 35px; }
 
-.web-map {
-  position: relative; }
+.web-map { position: relative; }
 
-.top-drop {
-  position: relative; }
+.top-drop { position: relative; }
 
 /*下拉hover*/
-.top-drop:hover .top-drop-bg {
-  background-color: #fff;
-  border-left: 1px solid #DDD;
-  border-right: 1px solid #DDD;
-  border-bottom: 1px solid #fff;
-  margin-right: -1px;
-  margin-left: -1px;
-  z-index: 5; }
-.top-drop:hover .drop-box {
-  display: block; }
+.top-drop:hover .top-drop-bg { background-color: #fff; border-left: 1px solid #DDD; border-right: 1px solid #DDD; border-bottom: 1px solid #fff; margin-right: -1px; margin-left: -1px; z-index: 5; }
+.top-drop:hover .drop-box { display: block; }
 
-.web-map {
-  padding: 0 11px 0 9px;
-  position: relative;
-  display: block;
-  height: 35px;
-  line-height: 35px;
-  z-index: 5; }
+.web-map { padding: 0 11px 0 9px; position: relative; display: block; height: 35px; line-height: 35px; z-index: 5; }
 
-.iconfont.icon-jiantou_down {
-  font-size: 14px;
-  color: #bbb; }
+.iconfont.icon-jiantou_down { font-size: 14px; color: #bbb; }
 
 /*下拉通用样式*/
 /*网站导航下拉*/
-.web-map-drop {
-  position: absolute;
-  display: none;
-  border: 1px solid #DDD;
-  background: #fff;
-  top: 35px;
-  left: -1px;
-  z-index: 4;
-  overflow: hidden;
-  *zoom: 1;
-  width: 988px;
-  height: 240px;
-  padding-top: 20px; }
-  .web-map-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
+.web-map-drop { position: absolute; display: none; border: 1px solid #DDD; background: #fff; top: 35px; left: -1px; z-index: 4; overflow: hidden; *zoom: 1; width: 988px; height: 240px; padding-top: 20px; }
+.web-map-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
 
-.web-map-drop-close {
-  display: block;
-  position: absolute;
-  top: 12px;
-  right: 12px; }
-  .web-map-drop-close .icon-close {
-    display: block;
-    font-size: 14px;
-    color: #666; }
-    .web-map-drop-close .icon-close:hover {
-      color: #f60;
-      -webkit-transform: rotateZ(180deg);
-      -moz-transform: rotateZ(180deg);
-      -o-transform: rotateZ(180deg);
-      -ms-transform: rotateZ(180deg);
-      transform: rotateZ(180deg);
-      -webkit-transition: 0.5s;
-      -moz-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
+.web-map-drop-close { display: block; position: absolute; top: 12px; right: 12px; }
+.web-map-drop-close .icon-close { display: block; font-size: 14px; color: #666; }
+.web-map-drop-close .icon-close:hover { color: #f60; -webkit-transform: rotateZ(180deg); -moz-transform: rotateZ(180deg); -o-transform: rotateZ(180deg); -ms-transform: rotateZ(180deg); transform: rotateZ(180deg); -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 
-.web-map-drop-box {
-  float: left;
-  width: 176px;
-  padding-left: 20px;
-  border-right: 1px solid #eee; }
-  .web-map-drop-box h3 {
-    height: 25px;
-    font-size: 14px; }
+.web-map-drop-box { float: left; width: 176px; padding-left: 20px; border-right: 1px solid #eee; }
+.web-map-drop-box h3 { height: 25px; font-size: 14px; }
 
-.web-box-item {
-  width: 100%; }
-  .web-box-item a {
-    display: inline-block;
-    width: 50%;
-    height: 25px;
-    line-height: 25px;
-    font-size: 12px;
-    color: #666;
-    position: relative; }
-    .web-box-item a:hover {
-      color: #f60; }
+.web-box-item { width: 100%; }
+.web-box-item a { display: inline-block; width: 50%; height: 25px; line-height: 25px; font-size: 12px; color: #666; position: relative; }
+.web-box-item a:hover { color: #f60; }
 
-.web-box-item-hot {
-  display: inline-block;
-  margin-top: 0;
-  margin-left: 3px;
-  right: 18px;
-  width: 14px;
-  height: 14px;
-  background: url("image/npbg.png") 0 -205px no-repeat; }
+.web-box-item-hot { display: inline-block; margin-top: 0; margin-left: 3px; right: 18px; width: 14px; height: 14px; background: url("image/npbg.png") 0 -205px no-repeat; }
 
-.web-map-drop-box-end {
-  border-right: none; }
+.web-map-drop-box-end { border-right: none; }
 
-.seller {
-  padding: 0 7px 0 9px;
-  position: relative;
-  display: block;
-  height: 35px;
-  line-height: 35px;
-  z-index: 5; }
+.seller { padding: 0 7px 0 9px; position: relative; display: block; height: 35px; line-height: 35px; z-index: 5; }
 
 /*商家入驻下拉*/
-.seller-drop {
-  position: absolute;
-  display: none;
-  border: 1px solid #DDD;
-  background: #fff;
-  top: 35px;
-  left: -1px;
-  z-index: 4;
-  overflow: hidden;
-  *zoom: 1;
-  width: 162px;
-  height: 117px;
-  padding-top: 5px; }
-  .seller-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
-  .seller-drop p {
-    display: inline-block;
-    float: left;
-    width: 50%;
-    height: 28px;
-    overflow: hidden; }
-    .seller-drop p a {
-      display: inline-block;
-      width: 100%;
-      padding-left: 10px;
-      line-height: 28px; }
+.seller-drop { position: absolute; display: none; border: 1px solid #DDD; background: #fff; top: 35px; left: -1px; z-index: 4; overflow: hidden; *zoom: 1; width: 162px; height: 117px; padding-top: 5px; }
+.seller-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+.seller-drop p { display: inline-block; float: left; width: 50%; height: 28px; overflow: hidden; }
+.seller-drop p a { display: inline-block; width: 100%; padding-left: 10px; line-height: 28px; }
 
-.service {
-  padding: 0 9px;
-  position: relative;
-  display: block;
-  height: 35px;
-  line-height: 35px;
-  z-index: 5; }
+.service { padding: 0 9px; position: relative; display: block; height: 35px; line-height: 35px; z-index: 5; }
 
 /*客户服务下拉*/
-.service-drop {
-  position: absolute;
-  display: none;
-  border: 1px solid #DDD;
-  background: #fff;
-  top: 35px;
-  left: -1px;
-  z-index: 4;
-  overflow: hidden;
-  *zoom: 1;
-  left: -83px;
-  width: 162px;
-  height: 117px;
-  padding-top: 5px; }
-  .service-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
-  .service-drop p {
-    display: inline-block;
-    float: left;
-    width: 50%;
-    height: 28px;
-    overflow: hidden; }
-    .service-drop p a {
-      display: inline-block;
-      width: 100%;
-      padding-left: 10px;
-      line-height: 28px; }
+.service-drop { position: absolute; display: none; border: 1px solid #DDD; background: #fff; top: 35px; left: -1px; z-index: 4; overflow: hidden; *zoom: 1; left: -83px; width: 162px; height: 117px; padding-top: 5px; }
+.service-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+.service-drop p { display: inline-block; float: left; width: 50%; height: 28px; overflow: hidden; }
+.service-drop p a { display: inline-block; width: 100%; padding-left: 10px; line-height: 28px; }
 
-.location {
-  position: relative;
-  display: block;
-  height: 35px;
-  line-height: 35px;
-  z-index: 5;
-  margin-left: 10px; }
+.location { position: relative; display: block; height: 35px; line-height: 35px; z-index: 5; margin-left: 10px; }
 
-.location-pic {
-  display: inline-block;
-  float: left;
-  margin: 10px 6px 0;
-  width: 12px;
-  height: 15px;
-  background: url("image/index.png") -387px -183px; }
+.location-pic { display: inline-block; float: left; margin: 10px 6px 0; width: 12px; height: 15px; background: url("image/index.png") -387px -183px; }
 
-.location-down {
-  display: inline-block;
-  float: right;
-  width: 0;
-  height: 0;
-  margin: 16px 0 0 6px;
-  border-width: 6px 4px;
-  border-color: #bbb transparent transparent;
-  border-style: solid dashed dashed; }
+.location-down { display: inline-block; float: right; width: 0; height: 0; margin: 16px 0 0 6px; border-width: 6px 4px; border-color: #bbb transparent transparent; border-style: solid dashed dashed; }
 
-.top-right {
-  float: right; }
+.top-right { float: right; }
 
-.top-r {
-  float: left;
-  position: relative; }
+.top-r { float: left; position: relative; }
 
-.top-log a {
-  display: inline-block;
-  height: 35px;
-  line-height: 35px;
-  margin: 0 10px 0 4px; }
+.top-log a { display: inline-block; height: 35px; line-height: 35px; margin: 0 10px 0 4px; }
 
-.my-order, .my-yigou, .mobile-sn {
-  padding: 0 9px;
-  position: relative;
-  display: block;
-  height: 35px;
-  line-height: 35px;
-  z-index: 5; }
+.my-order, .my-yigou, .mobile-sn { padding: 0 9px; position: relative; display: block; height: 35px; line-height: 35px; z-index: 5; }
 
-.sn-vip, .yifubao, .company {
-  display: block;
-  padding: 0 10px;
-  height: 35px;
-  line-height: 35px; }
+.sn-vip, .yifubao, .company { display: block; padding: 0 10px; height: 35px; line-height: 35px; }
 
 /*我的订单下拉*/
-.my-order-drop {
-  position: absolute;
-  display: none;
-  border: 1px solid #DDD;
-  background: #fff;
-  top: 35px;
-  left: -1px;
-  z-index: 4;
-  overflow: hidden;
-  *zoom: 1;
-  width: 80px;
-  height: 120px;
-  padding-bottom: 5px; }
-  .my-order-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
-  .my-order-drop a {
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    padding-left: 10px;
-    overflow: hidden; }
+.my-order-drop { position: absolute; display: none; border: 1px solid #DDD; background: #fff; top: 35px; left: -1px; z-index: 4; overflow: hidden; *zoom: 1; width: 80px; height: 120px; padding-bottom: 5px; }
+.my-order-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+.my-order-drop a { display: block; height: 30px; line-height: 30px; padding-left: 10px; overflow: hidden; }
 
 /*我的易购下拉*/
-.my-yigou-drop {
-  position: absolute;
-  display: none;
-  border: 1px solid #DDD;
-  background: #fff;
-  top: 35px;
-  left: -1px;
-  z-index: 4;
-  overflow: hidden;
-  *zoom: 1;
-  width: 162px;
-  height: 156px;
-  padding-top: 5px; }
-  .my-yigou-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
+.my-yigou-drop { position: absolute; display: none; border: 1px solid #DDD; background: #fff; top: 35px; left: -1px; z-index: 4; overflow: hidden; *zoom: 1; width: 162px; height: 156px; padding-top: 5px; }
+.my-yigou-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
 
-.yigou-drop-top {
-  *zoom: 1; }
-  .yigou-drop-top:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
-  .yigou-drop-top img {
-    float: left;
-    margin-left: 10px;
-    width: 54px;
-    height: 54px;
-    border: 1px solid #F7F7F7; }
+.yigou-drop-top { *zoom: 1; }
+.yigou-drop-top:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+.yigou-drop-top img { float: left; margin-left: 10px; width: 54px; height: 54px; border: 1px solid #F7F7F7; }
 
-.yigou-drop-top-t {
-  display: block;
-  float: left;
-  margin-top: 2px;
-  margin-left: 20px;
-  width: 64px;
-  height: 26px;
-  line-height: 26px; }
+.yigou-drop-top-t { display: block; float: left; margin-top: 2px; margin-left: 20px; width: 64px; height: 26px; line-height: 26px; }
 
-.yigou-drop-top-p {
-  display: block;
-  float: left;
-  margin-left: 20px;
-  padding: 0 8px;
-  height: 22px;
-  width: 48px;
-  line-height: 22px;
-  color: #fff;
-  background-color: #FF6600;
-  border-radius: 3px; }
-  .yigou-drop-top-p:hover {
-    color: #fff; }
+.yigou-drop-top-p { display: block; float: left; margin-left: 20px; padding: 0 8px; height: 22px; width: 48px; line-height: 22px; color: #fff; background-color: #FF6600; border-radius: 3px; }
+.yigou-drop-top-p:hover { color: #fff; }
 
-.yigou-drop-btn {
-  padding: 5px 0; }
-  .yigou-drop-btn p {
-    display: inline-block;
-    float: left;
-    width: 50%;
-    height: 30px;
-    overflow: hidden; }
-    .yigou-drop-btn p a {
-      display: inline-block;
-      width: 100%;
-      padding-left: 10px;
-      line-height: 30px; }
+.yigou-drop-btn { padding: 5px 0; }
+.yigou-drop-btn p { display: inline-block; float: left; width: 50%; height: 30px; overflow: hidden; }
+.yigou-drop-btn p a { display: inline-block; width: 100%; padding-left: 10px; line-height: 30px; }
 
-.shopcar {
-  display: block;
-  height: 35px;
-  line-height: 35px;
-  padding: 0 3px 0 27px;
-  color: #f60;
-  position: relative; }
-  .shopcar .icon-gouwuche {
-    font-size: 14px;
-    color: #f60;
-    position: absolute;
-    top: 8px;
-    left: 8px; }
-  .shopcar span {
-    margin: 0 3px; }
+.shopcar { display: block; height: 35px; line-height: 35px; padding: 0 3px 0 27px; color: #f60; position: relative; }
+.shopcar .icon-gouwuche { font-size: 14px; color: #f60; position: absolute; top: 8px; left: 8px; }
+.shopcar span { margin: 0 3px; }
 
 /*购物车下拉*/
-.shopcar-drop {
-  position: absolute;
-  display: none;
-  border: 1px solid #DDD;
-  background: #fff;
-  top: 35px;
-  left: -1px;
-  z-index: 4;
-  overflow: hidden;
-  *zoom: 1;
-  width: 280px;
-  height: 400px; }
-  .shopcar-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
+.shopcar-drop { position: absolute; display: none; border: 1px solid #DDD; background: #fff; top: 35px; left: -1px; z-index: 4; overflow: hidden; *zoom: 1; width: 280px; height: 400px; }
+.shopcar-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
 
-.shopcar-drop-box {
-  display: table;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%; }
+.shopcar-drop-box { display: table; vertical-align: middle; width: 100%; height: 100%; }
 
-.shopcar-drop-box-content {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center; }
+.shopcar-drop-box-content { display: table-cell; vertical-align: middle; text-align: center; }
 
-.shopcar-drop-pic {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  height: 96px;
-  background: url("image/sidebar.png") 0 -290px no-repeat; }
+.shopcar-drop-pic { display: block; margin: 0 auto; width: 150px; height: 96px; background: url("image/sidebar.png") 0 -290px no-repeat; }
 
-.shopcar-drop-p1 {
-  display: inline-block;
-  margin: 10px auto 18px;
-  font-size: 14px;
-  height: 24px;
-  line-height: 24px;
-  font-weight: lighter;
-  color: #BBB; }
+.shopcar-drop-p1 { display: inline-block; margin: 10px auto 18px; font-size: 14px; height: 24px; line-height: 24px; font-weight: lighter; color: #BBB; }
 
-.shopcar-drop-p2 {
-  display: inline-block;
-  height: 26px;
-  line-height: 26px;
-  color: #BBB;
-  margin: 0 auto; }
+.shopcar-drop-p2 { display: inline-block; height: 26px; line-height: 26px; color: #BBB; margin: 0 auto; }
 
-.shopcar-drop-log {
-  display: inline-block;
-  padding: 0 20px;
-  height: 26px;
-  line-height: 26px;
-  background: #FF6600;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: 700; }
-  .shopcar-drop-log:hover {
-    color: #fff; }
+.shopcar-drop-log { display: inline-block; padding: 0 20px; height: 26px; line-height: 26px; background: #FF6600; border-radius: 3px; color: #fff; font-weight: 700; }
+.shopcar-drop-log:hover { color: #fff; }
 
 /*手机苏宁下拉*/
-.mobile-drop {
-  position: absolute;
-  display: none;
-  border: 1px solid #DDD;
-  background: #fff;
-  top: 35px;
-  left: -1px;
-  z-index: 4;
-  overflow: hidden;
-  *zoom: 1;
-  width: 540px;
-  height: 210px;
-  left: -461px;
-  padding-top: 10px;
-  *zoom: 1; }
-  .mobile-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
-  .mobile-drop:after {
-    display: table;
-    content: '';
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    clear: both; }
+.mobile-drop { position: absolute; display: none; border: 1px solid #DDD; background: #fff; top: 35px; left: -1px; z-index: 4; overflow: hidden; *zoom: 1; width: 540px; height: 210px; left: -461px; padding-top: 10px; *zoom: 1; }
+.mobile-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+.mobile-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
 
-.mobile-drop-box {
-  width: 180px;
-  float: left;
-  position: relative;
-  text-align: center;
-  color: #666; }
-  .mobile-drop-box p {
-    height: 14px;
-    line-height: 14px; }
-  .mobile-drop-box:after {
-    display: block;
-    content: '';
-    width: 1px;
-    height: 97px;
-    background-color: #DEDEDE;
-    position: absolute;
-    right: 0;
-    top: 25px; }
+.mobile-drop-box { width: 180px; float: left; position: relative; text-align: center; color: #666; }
+.mobile-drop-box p { height: 14px; line-height: 14px; }
+.mobile-drop-box:after { display: block; content: ''; width: 1px; height: 97px; background-color: #DEDEDE; position: absolute; right: 0; top: 25px; }
 
-.mobile-drop-box-btn {
-  margin: 5px 0; }
+.mobile-drop-box-btn { margin: 5px 0; }
 
-.mobile-drop-box-code {
-  width: 147px;
-  height: 147px;
-  margin: 10px 0; }
+.mobile-drop-box-code { width: 147px; height: 147px; margin: 10px 0; }
 
 /*右上角+*/
-.top-ad-btn {
-  display: block;
-  position: absolute;
-  top: 3px;
-  right: -23px;
-  background: url("image/index.png") -241px -160px;
-  width: 15px;
-  height: 15px; }
-  .top-ad-btn:hover {
-    background-position: -256px -160px; }
+.top-ad-btn { display: block; position: absolute; top: 3px; right: -23px; background: url("image/index.png") -241px -160px; width: 15px; height: 15px; }
+.top-ad-btn:hover { background-position: -256px -160px; }
+
+/*top部分结束*/
+/*head部分*/
+.head { width: 1190px; height: 110px; margin: 0 auto; *zoom: 1; }
+.head:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+
+.logo { display: block; float: left; width: 190px; height: 90px; background: url("image/logo.png") center center no-repeat; background-size: 190px 90px; }
+
+.logo-ad { display: block; float: left; width: 160px; height: 100px; background: url("image/logo-ad.gif") center center no-repeat; }
+
+.search { float: left; margin: 30px 0 0 10px; }
+
+.search-box { position: relative; *zoom: 1; }
+.search-box:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+
+.search-input { float: left; position: relative; }
+.search-input input { width: 378px; padding: 0 12px 0 28px; border: 2px solid #F90; border-right: none; height: 36px; line-height: 36px; font-size: 12px; outline: none; background-color: #fff; }
+
+.iconfont.icon-search { color: #ccc; font-size: 14px; position: absolute; left: 11px; top: 10px; }
+
+.search-submit { float: left; text-align: center; width: 120px; height: 40px; line-height: 40px; font-size: 18px; color: #fff; font-weight: 700; background-color: #F90; border: none; outline: none; }
+
+.search-hotword { margin-top: 8px; }
+.search-hotword .color-f { color: #f60; }
+.search-hotword a { display: inline-block; height: 12px; line-height: 12px; font-size: 12px; color: #999; padding: 0 10px; border-right: 1px solid #DDD; }
+.search-hotword a:hover { color: #F60; }
+.search-hotword .search-hotword-f { padding-left: 0; }
+.search-hotword .search-hotword-e { border: none; }
+
+.code { float: right; margin-top: 10px; width: 82px; height: 82px; padding: 3px; background: url("image/code.png") center center no-repeat; background-size: 82px 82px; border: 1px solid #EEE; }
+
+/*搜索下拉框*/
+.search-drop { display: none; position: absolute; top: 41px; left: 0; border: 1px solid #E4E4E4; width: 538px; height: 269px; background-color: #fff; *zoom: 1; }
+.search-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+
+.search-drop-left { float: left; width: 250px; height: 100%; border-right: 1px solid #E4E4E4; }
+.search-drop-left h3 { height: 28px; line-height: 28px; font-size: 12px; padding-left: 12px; background-color: #EEE; color: #999; }
+.search-drop-left img { display: block; margin: 40px auto; }
+
+.search-drop-right { float: left; width: 287px; }
+.search-drop-right h3 { padding-left: 15px; line-height: 28px; height: 28px; font-size: 12px; color: #999; *zoom: 1; }
+.search-drop-right h3:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+.search-drop-right h3 .icon-close { font-size: 10px; float: right; margin-top: 7px; margin-right: 7px; }
+
+.search-drop-hotword { padding: 5px 0; overflow: hidden; height: 231px; }
+.search-drop-hotword a { display: inline-block; padding: 0 5px; height: 24px; line-height: 24px; font-size: 12px; margin-left: 15px; margin-bottom: 15px; border: 1px solid #E1E1E1; }
+.search-drop-hotword a .search-drop-hotword-b { border: 1px solid #f60; color: #f60; }
+.search-drop-hotword a:hover { background-color: #f60; color: #fff; border-color: #f60; }
+
+.search-input:active .search-drop { display: block; }
+
+/*顶部导航栏*/
+.top-nav { width: 1190px; margin: 0 auto; *zoom: 1; }
+.top-nav:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+
+.top-nav-all { float: left; display: block; width: 163px; height: 38px; line-height: 38px; background-color: #F90; font-size: 13px; font-weight: 700; color: #fff; padding-left: 27px; position: relative; }
+.top-nav-all .icon-tubiao13 { color: #fff; font-size: 17px; position: absolute; top: 7px; left: 8px; }
+.top-nav-all:hover { color: #fff; background-color: #F80; }
+
+.top-nav-list { float: left; margin-left: 10px; }
+
+.top-nav-item { display: inline-block; font-size: 15px; height: 38px; line-height: 38px; font-weight: 700; padding: 0 12px 0 13px; color: #333; position: relative; }
+.top-nav-item span { display: none; position: absolute; background: url("image/index.png") -37px 0; width: 25px; height: 8px; bottom: 0; left: 50%; margin-left: -12px; transition: all .5s; }
+.top-nav-item:hover span { display: block; }
+
+.top-nav-hot { position: absolute; display: block; width: 14px; height: 17px; top: 0; right: -2px; background: url("image/index.png") -345px -213px no-repeat; }
+
+.top-nav-ad { float: right; }
+.top-nav-ad img { width: 170px; height: 38px; }
+
+/*导航轮播*/
+.banner { width: 1190px; margin: 0 auto; position: relative; *zoom: 1; }
+.banner:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+
+.banner-bg { width: 1190px; position: relative; }
+
+.banner-bg1, .banner-bg2 { position: absolute; width: 545px; height: 440px; left: 50%; top: 0; }
+
+.banner-bg1 { margin-left: -950px; }
+
+.banner-bg2 { margin-left: 425px; }
+
+.nav { float: left; width: 190px; background-color: #252221; padding-top: 1px; }
+
+.nav-list { overflow: hidden; height: 32px; }
+.nav-list:hover .nav-item { background-color: #fff; }
+.nav-list:hover .nav-item > a { color: #333; }
+.nav-list .nav-item > a:hover { color: #f60; }
+
+.nav-item { position: relative; padding-left: 26px; }
+.nav-item .icon-shouji { position: absolute; color: #fea900; top: 7px; left: 5px; font-size: 14px; }
+.nav-item a { font-size: 12px; line-height: 32px; color: #fff; }
+.nav-item span { color: #777; margin: 0 5px 0 2px; }
+
+/*导航栏下拉*/
+.nav-item-drop { display: block; width: 999px; height: 438px; border: 1px solid #252221; border-left: none; position: absolute; top: 0; left: 190px; z-index: 3; background-color: #F3F3F3; overflow: hidden; *zoom: 1; }
+.nav-item-drop:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+
+.nav-drop-left { float: left; width: 734px; padding: 0 36px 0 30px; height: 100%; background-color: #fff; margin-right: 8px; }
+
+.nav-drop-tit { margin-top: 10px; padding-left: 3px; *zoom: 1; overflow: hidden; }
+.nav-drop-tit:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+.nav-drop-tit a { display: block; float: left; padding: 0 10px; height: 24px; line-height: 24px; font-size: 12px; color: #fff; background-color: #FF9900; margin-right: 25px; }
+.nav-drop-tit a:hover { background-color: #F80; }
+
+.nav-drop-info { margin-top: 2px; }
+
+.nav-drop-line { margin-top: 13px; *zoom: 1; }
+.nav-drop-line:after { display: table; content: ''; height: 0; overflow: hidden; visibility: hidden; clear: both; }
+
+.nav-drop-list { display: block; float: left; width: 84px; font-size: 12px; line-height: 20px; color: #333; font-weight: 700; overflow: hidden; }
+
+.nav-drop-item { float: left; width: 650px; padding-bottom: 9px; border-bottom: 1px solid #EEE; }
+.nav-drop-item a { display: inline-block; height: 20px; line-height: 20px; font-size: 12px; margin-right: 15px; }
 
 /*# sourceMappingURL=css.css.map */
